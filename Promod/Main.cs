@@ -25,6 +25,7 @@ namespace Promod
             Call("setDvarifUninitialized", "sv_NESVDvar", "1");
             Call("setDvarifUninitialized", "sv_NERemoveAnnouncer", "1");
             Call("setDvarifUninitialized", "sv_NEAutoBalance", "1");
+            Call("setDvarifUninitialized", "sv_NEAliveCounter", "1");
             Log.Info("Dvars Initialized.");
             #endregion
 
@@ -190,9 +191,556 @@ namespace Promod
                 }
             };
         }
+    private void ColorFriendlyEnemy(string mapname, HudElem enemy, HudElem friendly, HudElem VS)
+    {
+      switch (mapname)
+      {
+        case "mp_aground_ss":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_alpha":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_boardwalk":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_bravo":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_bootleg":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_burn_ss":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_carbon":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_cement":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_courtyard_ss":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_crosswalk_ss":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_dome":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_exchange":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_hardhat":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_hillside_ss":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_interchange":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_italy":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_lambeth":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_meteora":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_moab":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_mogadishu":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_morningwood":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_nola":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_overwatch":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_paris":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_park":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_plaza2":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_qadeem":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_radar":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_restrepo_ss":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_roughneck":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_seatown":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_shipbreaker":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_six_ss":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_terminal_cls":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_underground":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+        case "mp_village":
+          friendly.SetText("^2Friendly ^5:");
+          enemy.SetText("^1Enemy ^5:");
+          VS.SetText("");
+          break;
+      }
+    }
+        private void ColorLast(string mapname, string nomeplayer, HudElem playername, bool itsme)
+    {
+      switch (mapname)
+      {
+        case "mp_aground_ss":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_alpha":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_boardwalk":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_bravo":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_bootleg":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_burn_ss":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_carbon":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_cement":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_courtyard_ss":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_crosswalk_ss":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_dome":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_exchange":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_hardhat":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_hillside_ss":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_interchange":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_italy":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_lambeth":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_meteora":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_moab":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_mogadishu":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_morningwood":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_nola":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_overwatch":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_paris":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_park":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_plaza2":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_qadeem":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_radar":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_restrepo_ss":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_roughneck":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_seatown":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_shipbreaker":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_six_ss":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_terminal_cls":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_underground":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+        case "mp_village":
+          if (itsme)
+          {
+            playername.SetText("^2" + nomeplayer);
+            break;
+          }
+          playername.SetText("^1" + nomeplayer);
+          break;
+      }
+    }
+
 
         public void OnPlayerConnecting(Entity player)
         {
+            if (Call<int>("getDvarInt", "sv_NEAliveCounter") != 0) 
+            { 
+                AfterDelay(300, (() =>
+                {
+                  string nomemappa = Call<string>("getdvar", (Parameter) "mapname");
+                  HudElem fontString1 = HudElem.CreateFontString(player, "hudbig", 0.6f);
+                  fontString1.SetPoint("DOWNRIGHT", "DOWNRIGHT", -19, 120);
+                  HudElem fontString2 = HudElem.CreateFontString(player, "hudbig", 0.6f);
+                  fontString2.SetPoint("DOWNRIGHT", "DOWNRIGHT", -19, 140);
+                  HudElem fontString3 = HudElem.CreateFontString(player, "hudbig", 0.5f);
+                  fontString3.SetPoint("DOWNRIGHT", "DOWNRIGHT", -19, 130);
+                  AfterDelay(500, (() =>
+                  {
+                    if (Call<string>("getDvar", "sv_NEAliveCounter") != "null")
+                      return;
+                    fontString3.HideWhenInMenu = true;
+                    fontString2.HideWhenInMenu = true;
+                    fontString1.HideWhenInMenu = true;
+                    HudElem LabelANum = HudElem.CreateFontString(player, "hudbig", 0.6f);
+                    LabelANum.SetPoint("DOWNRIGHT", "DOWNRIGHT", -8, 120);
+                    LabelANum.HideWhenInMenu = true;
+                    HudElem LabelBNum = HudElem.CreateFontString(player, "hudbig", 0.6f);
+                    LabelBNum.SetPoint("DOWNRIGHT", "DOWNRIGHT", -8, 140);
+                    LabelBNum.HideWhenInMenu = true;
+                    AfterDelay(500, (() => OnInterval(300, (() =>
+                    {
+                      string field = player.GetField<string>("sessionteam");
+                      string str1 = Call<int>("getteamplayersalive", (Parameter) "axis").ToString();
+                      string str2 = Call<int>("getteamplayersalive", (Parameter) "allies").ToString();
+                      string text1 = field.Equals("allies") ? str2 : str1;
+                      string text2 = field.Equals("allies") ? str1 : str2;
+                      if (text1 != "1" || text2 != "1")
+                        ColorFriendlyEnemy(nomemappa, fontString2, fontString1, fontString3);
+                      if (text1 == "1")
+                      {
+                        ColorLast(nomemappa, player.Name, LabelANum, true);
+                        fontString1.SetText("");
+                        fontString3.SetText("^:VS");
+                      }
+                      else
+                        LabelANum.SetText(text1);
+                      if (text2 == "1")
+                      {
+                        List<Entity> entityList = new List<Entity>();
+                        foreach (Entity entity in Players)
+                        {
+                          if (player.GetField<string>("sessionteam") != entity.GetField<string>("sessionteam") && player.IsAlive)
+                            entityList.Add(player);
+                        }
+                        if (entityList.Count >= 0)
+                        {
+                          ColorLast(nomemappa, entityList[0].Name, LabelBNum, false);
+                          fontString2.SetText("");
+                          fontString3.SetText("^:VS");
+                        }
+                        else
+                          LabelBNum.SetText(text2);
+                      }
+                      else
+                        LabelBNum.SetText(text2);
+                      return true;
+                    }))));
+                  }));
+                }));
+            }
+
             player.SetClientDvar("lowAmmoWarningColor1", "0 0 0 0");
             player.SetClientDvar("lowAmmoWarningColor2", "0 0 0 0");
             player.SetClientDvar("lowAmmoWarningNoAmmoColor1", "0 0 0 0");
